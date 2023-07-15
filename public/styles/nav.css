@@ -5,6 +5,7 @@ nav {
   width: 100%;
   background-color: #4056A1;
   color: #FFFFFF;
+  justify-content: space-between;
 }
 
 #logo {
@@ -26,4 +27,9 @@ p {
   justify-content: flex-end;
   margin: 1.5em;
   width: 100%;
+}
+
+#new-tweet-text {
+  display: flex;
+  justify-content: center;
 }
