@@ -1,6 +1,23 @@
-header{
+header {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 600px;
-  background-color: skyblue;
+  height: 500px;
+  padding-top: 120px;
+  background-color: cornflowerblue;
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+}
+
+#profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile-name {
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
 }
