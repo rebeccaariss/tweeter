@@ -1,10 +1,10 @@
-header {
+#user-profile {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 500px;
+  height: 400px;
   padding-top: 120px;
   background-color: cornflowerblue;
   background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
@@ -14,6 +14,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 12rem;
+  width: 12rem;
 }
 
 #profile-name {

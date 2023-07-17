@@ -1,6 +1,6 @@
 .new-tweet {
   width: 100%;
-  padding: 1.5em 0em;
+  padding: 1.5rem 0rem;
 }
 
 label {
@@ -40,5 +40,5 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em 0em;
+  padding: 0.5rem 0rem;
 }

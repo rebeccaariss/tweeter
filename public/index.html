@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -34,16 +35,14 @@
     <nav>
       <span id="logo">tweeter</span>
       <div>
-        <p>
+        <p id="write-new-tweet">
             <span><strong>Write</strong> a new tweet</span>
             <i id="angle-icon" class="fa-solid fa-angles-down" style="color: #ffffff;"></i>
         </p>
       </div>
     </nav>
-    <header>
-      <div id="profile-image">
-          <img src="/images/profile-hex.png"> 
-      </div>
+    <header id="user-profile">
+      <img id="profile-image" src="/images/profile-hex.png" alt="user profile picture">
       <br>
       <div id="profile-name">
           <span><strong>Your</strong> Name</span>
@@ -62,6 +61,59 @@
             <output name="counter" class="counter" for="tweet-text">140</output>
           </footer>
         </form>
+      </section>
+      <section class="tweet-container">
+
+        <article class="tweet">
+          <header>
+            <div class="author-info">
+              <img src="https://i.imgur.com/73hZDYK.png" alt="author profile picture"/>
+              <p class="author-name">Newton</p>
+            </div>
+            <p class="author-handle">@SirIsaac</p>
+          </header>
+          <p class="tweet-text">Truth is ever to be found in simplicity, and not in the multiplicity and confusion of things.</p>
+          <footer>
+            <h6>1 day ago</h6>
+            <div class="icons">
+              <a href="" class="tweet-action-icon">
+                <i class="fa-solid fa-flag"></i>
+              </a>
+              <a href="" class="tweet-action-icon">
+                <i class="fa-solid fa-retweet"></i>
+              </a>
+              <a href="" class="tweet-action-icon">
+                <i class="fa-solid fa-heart"></i>
+              </a>
+            </div>
+          </footer>
+      </article>
+
+      <article class="tweet">
+        <header>
+          <div class="author-info">
+            <img src="https://i.imgur.com/nlhLi3I.png" alt="author profile picture"/>
+            <p class="author-name">Descartes</p>
+          </div>
+          <p class="author-handle">@rd</p>
+        </header>
+        <p class="tweet-text">I think, therefore I am.</p>
+        <footer>
+          <h6>3 days ago</h6>
+          <div class="icons">
+            <a href="" class="tweet-action-icon">
+              <i class="fa-solid fa-flag"></i>
+            </a>
+            <a href="" class="tweet-action-icon">
+              <i class="fa-solid fa-retweet"></i>
+            </a>
+            <a href="" class="tweet-action-icon">
+              <i class="fa-solid fa-heart"></i>
+            </a>
+          </div>
+        </footer>
+      </article>
+
       </section>
     </main>
   </body>
