@@ -4,6 +4,18 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+const tweetData = {
+  "user": {
+    "name": "Newton",
+    "avatars": "https://i.imgur.com/73hZDYK.png",
+    "handle": "@SirIsaac"
+  },
+  "content": {
+    "text": "If I have seen further it is by standing on the shoulders of giants"
+  },
+  "created_at": 1461116232227
+};
+
 const renderTweets = function(tweets) {
   // loops through tweets
   // calls createTweetElement for each tweet
@@ -18,40 +30,40 @@ const createTweetElement = function(tweet) {
   // initial example:
   // let $tweet = $(`<article class="tweet">Hello world</article>`);
 
-  let $tweet = /* Your code for creating the tweet element */
-  // ...
+  let $tweet =
+    $(`<article class="tweet">
+      <header>
+        <div class="author-info">
+          <img src=${tweet.user.avatars} alt="author profile picture"/>
+          <p class="author-name">${tweet.user.name}</p>
+        </div>
+        <p class="author-handle">${tweet.user.handle}</p>
+      </header>
+      <p class="tweet-text">${tweet.content.text}</p>
+      <footer>
+        <h6>${tweet.created_at}</h6>
+        <div class="icons">
+          <a href="" class="tweet-action-icon">
+            <i class="fa-solid fa-flag"></i>
+          </a>
+          <a href="" class="tweet-action-icon">
+            <i class="fa-solid fa-retweet"></i>
+          </a>
+          <a href="" class="tweet-action-icon">
+            <i class="fa-solid fa-heart"></i>
+          </a>
+        </div>
+      </footer>
+    </article>`);
+
   return $tweet;
 };
 
 renderTweets(data);
 
-// template string example:
-// const markup = `
-//  <div class="person">
-//     <h2>
-//         ${person.name}
-//     </h2>
-//     <p class="location">${person.city}</p>
-//     <p class="bio">${person.bio}</p>
-//  </div>
-// `;
-
-
 // ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // Test / driver code (temporary). Eventually will get this from the server.
-const tweetData = {
-  "user": {
-    "name": "Newton",
-    "avatars": "https://i.imgur.com/73hZDYK.png",
-      "handle": "@SirIsaac"
-    },
-  "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-  "created_at": 1461116232227
-};
-
 const $tweet = createTweetElement(tweetData);
 
 // Test / driver code (temporary)
