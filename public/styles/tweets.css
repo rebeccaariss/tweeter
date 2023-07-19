@@ -67,12 +67,22 @@ article:hover {
   justify-content: space-between;
 }
 
-.tweet-action-icon {
+/* .tweet-action-icon {
   color: #4056A1;
   padding: 0.5rem;
 }
 
 .tweet-action-icon:hover {
+  color: yellowgreen;
+  padding: 0.5rem;
+} */
+
+.icons > i {
+  color: #4056A1;
+  padding: 0.5rem;
+}
+
+.icons > i:hover {
   color: yellowgreen;
   padding: 0.5rem;
 }

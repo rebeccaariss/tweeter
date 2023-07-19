@@ -34,7 +34,7 @@ $(document).ready(function() {
     // loops through tweets
     // calls createTweetElement for each tweet
     // takes return value and appends it to the .tweet-container
-    
+
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
       $('.tweet-container').append($tweet);
@@ -55,15 +55,9 @@ $(document).ready(function() {
         <footer>
           <h6>${tweet.created_at}</h6>
           <div class="icons">
-            <a href="" class="tweet-action-icon">
               <i class="fa-solid fa-flag"></i>
-            </a>
-            <a href="" class="tweet-action-icon">
               <i class="fa-solid fa-retweet"></i>
-            </a>
-            <a href="" class="tweet-action-icon">
               <i class="fa-solid fa-heart"></i>
-            </a>
           </div>
         </footer>
       </article>`);
