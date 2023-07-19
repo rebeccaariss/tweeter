@@ -9,12 +9,14 @@ nav {
   justify-content: space-between;
 }
 
-#logo {
+/* Tweeter logo: */
+nav>span {
   font-family: 'Bungee', cursive;
   margin: 1.5rem;
 }
 
-#write-new-tweet {
+/* "Write a new tweet": */
+nav>div>p {
   display: flex;
   padding: 1.5rem;
   width: 100%;
