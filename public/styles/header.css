@@ -1,4 +1,5 @@
-#user-profile {
+/* User profile (page header): */
+.user-profile {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +11,8 @@
   background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
 }
 
-#profile-image {
+/* Profile picture: */
+.user-profile>img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +20,8 @@
   width: 12rem;
 }
 
-#profile-name {
+/* User full name (displayed under profile picture): */
+.user-profile>div {
   display: flex;
   justify-content: center;
   color: #FFFFFF;
