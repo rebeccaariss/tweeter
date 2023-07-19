@@ -1,10 +1,7 @@
-.new-tweet {
+/* Tweet composition section: */
+main>section {
   width: 100%;
   padding: 1.5rem 0rem;
-}
-
-label {
-  font-weight: bold;
 }
 
 form {
@@ -32,10 +29,12 @@ button {
   padding: 5px 10px;
 }
 
-.counter {
+/* Character count output element: */
+form>footer>output {
   font-family: 'Bungee', sans-serif;
 }
 
+/* Footer contains button and character counter: */
 footer {
   display: flex;
   justify-content: space-between;

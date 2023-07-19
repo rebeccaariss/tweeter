@@ -1,4 +1,5 @@
-.tweet-container {
+/* Container where tweets populate dynamically: */
+#tweet-container {
   display: flex;
   flex-direction: column;
   align-items: center;

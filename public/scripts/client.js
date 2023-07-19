@@ -33,11 +33,11 @@ $(document).ready(function() {
   const renderTweets = function(tweets) {
     // loops through tweets
     // calls createTweetElement for each tweet
-    // takes return value and appends it to the .tweet-container
+    // takes return value and appends it to the #tweet-container
 
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
-      $('.tweet-container').append($tweet);
+      $('#tweet-container').append($tweet);
     }
   };
 
