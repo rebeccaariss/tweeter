@@ -24,12 +24,12 @@ article:hover {
   height: 3rem;
 }
 
-article>header>div {
+article > header > div {
   display: flex;
   align-items: center;
 }
 
-article>header>div>img {
+article >header >div > img {
   height: 2.5rem;
   width: 2.5rem;
 }

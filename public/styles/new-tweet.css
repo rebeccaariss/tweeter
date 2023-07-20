@@ -1,5 +1,5 @@
 /* Tweet composition section: */
-main>section {
+main > section {
   width: 100%;
   padding: 1.5rem 0rem;
 }
@@ -30,7 +30,7 @@ button {
 }
 
 /* Character count output element: */
-form>footer>output {
+form > footer > output {
   font-family: 'Bungee', sans-serif;
 }
 

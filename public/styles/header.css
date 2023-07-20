@@ -12,7 +12,7 @@
 }
 
 /* Profile picture: */
-.user-profile>img {
+.user-profile > img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@
 }
 
 /* User full name (displayed under profile picture): */
-.user-profile>div {
+.user-profile > div {
   display: flex;
   justify-content: center;
   color: #FFFFFF;
