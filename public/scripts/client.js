@@ -32,10 +32,13 @@ $(document).ready(function() {
   };
 
   const renderTweets = function(tweets) {
+    // clear existing tweets before replacing with updated contents of db:
+    // (prevents repeating sets of tweets)
+    $("#tweet-container").empty(".tweet");
+
     // loops through tweets
     // calls createTweetElement for each tweet
     // takes return value and prepends it to the #tweet-container
-
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
       $('#tweet-container').prepend($tweet);
