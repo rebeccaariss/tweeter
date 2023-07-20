@@ -45,11 +45,11 @@ $(document).ready(function() {
     let $tweet =
       $(`<article class="tweet">
         <header>
-          <div class="author-info">
+          <div>
             <img src=${tweet.user.avatars} alt="author profile picture"/>
-            <p class="author-name">${tweet.user.name}</p>
+            <h4 class="author-name">${tweet.user.name}</h4>
           </div>
-          <p class="author-handle">${tweet.user.handle}</p>
+          <h4 class="author-handle">${tweet.user.handle}</h4>
         </header>
         <p class="tweet-text">${tweet.content.text}</p>
         <footer>

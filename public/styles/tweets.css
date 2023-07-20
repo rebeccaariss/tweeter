@@ -6,6 +6,7 @@
   width: 100%;
 }
 
+/* Article contains one populated tweet element: */
 article {
   border: 2px solid #545149;
   width: 100%;
@@ -23,12 +24,12 @@ article:hover {
   height: 3rem;
 }
 
-.author-info {
+article>header>div {
   display: flex;
   align-items: center;
 }
 
-.author-info img {
+article>header>div>img {
   height: 2.5rem;
   width: 2.5rem;
 }
@@ -36,6 +37,7 @@ article:hover {
 .author-name {
   padding: 1rem;
   margin: 0;
+  font-weight: normal;
 }
 
 .author-handle {
