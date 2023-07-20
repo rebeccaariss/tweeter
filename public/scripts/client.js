@@ -47,9 +47,9 @@ $(document).ready(function() {
         <header>
           <div>
             <img src=${tweet.user.avatars} alt="author profile picture"/>
-            <h4 class="author-name">${tweet.user.name}</h4>
+            <span class="author-name">${tweet.user.name}</span>
           </div>
-          <h4 class="author-handle">${tweet.user.handle}</h4>
+          <span class="author-handle">${tweet.user.handle}</span>
         </header>
         <p class="tweet-text">${tweet.content.text}</p>
         <footer>
