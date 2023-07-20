@@ -66,4 +66,26 @@ $(document).ready(function() {
   };
 
   renderTweets(data);
+
+  const $form = $("#post-tweet");
+
+  $form.on("submit", function(event) {
+    event.preventDefault(); // event.preventDefault prevents the default
+    // form submission behaviour, which is to send the post request and
+    // reload the page.
+
+    const $tweet = $(this).serialize();
+
+    $.ajax({
+      type: "POST",
+      url: "/tweets",
+      data: $tweet,
+      success: function() {
+        console.log("success!");
+      },
+      fail: function() {
+        console.log("error");
+      }
+    });
+  });
 });
