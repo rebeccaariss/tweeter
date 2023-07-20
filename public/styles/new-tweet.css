@@ -21,6 +21,40 @@ textarea {
   font-size: 1rem;
 }
 
+/* Container for error messages: */
+.error-messages {
+  display: flex;
+  justify-content: center;
+}
+
+/* Styles for individual errors: */
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(247, 65, 65, 0.4);
+  color: rgb(181, 35, 35);
+  border: 0.5px solid rgba(247, 65, 65, 0.4);;
+  padding: 0.75rem;
+  border-radius: 100px;
+}
+
+.error > i {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* Display if user submits form without text: */
+#no-text {
+  display: none;
+}
+
+/* Display if user exceeds character limit of 140: */
+#char-count {
+  display: none;
+}
+
 button {
   font-family: 'Bungee', cursive;
   background-color: #4056A1;

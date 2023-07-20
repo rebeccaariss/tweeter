@@ -57,6 +57,18 @@
         <form id="tweet-post-form" method="POST" action="/tweets">
           <label for="tweet-text"><strong>What are you humming about?</strong></label>
           <textarea id="tweet-text" name="text"></textarea>
+          <div class="error-messages">
+            <p class="error" id="no-text">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              Sorry! You need to add text before you can post a tweet.
+              <i class="fa-solid fa-triangle-exclamation"></i>
+            </p>
+            <p class="error" id="char-count">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              Character count cannot exceed 140 characters. Please trim your tweet.
+              <i class="fa-solid fa-triangle-exclamation"></i>
+            </p>
+          </div>
           <footer>
             <button type="submit">Tweet</button>
             <output name="counter" for="tweet-text">140</output>
