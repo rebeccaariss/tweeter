@@ -60,19 +60,30 @@ $(document).ready(function() {
     // form submission behaviour, which is to send the post request and
     // reload the page.
 
-    const $tweet = $(this).serialize();
+    const $tweet = $(this).serialize(); // form data in query string format per POST requirements
+    const $tweetString = $("#tweet-text").val(); // captures text from textarea
+    const $length = $tweetString.length; // length of text from textarea
 
-    $.ajax({
-      method: "POST",
-      url: "/tweets",
-      data: $tweet,
-      success: () => {
-        loadTweets();
-      },
-      fail: (error) => {
-        console.log("error: ", error);
-      }
-    });
+    // check if text area contains no characters or a string of spaces
+    // (in third condition, trim removes spaces from string, leaving an empty string
+    // if there were only spaces to begin with):
+    if ($length === 0 || $tweetString === null || $tweetString.trim() === "") {
+      alert("Sorry! You need to add text before you can tweet. 🐦");
+    } else if ($length > 140) {
+      alert("Character count cannot exceed 140 characters. Please trim your tweet. 🐦");
+    } else {
+      $.ajax({
+        method: "POST",
+        url: "/tweets",
+        data: $tweet,
+        success: () => {
+          loadTweets();
+        },
+        fail: (error) => {
+          console.log("error: ", error);
+        }
+      });
+    }
   });
 
   loadTweets();
