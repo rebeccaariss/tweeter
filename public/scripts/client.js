@@ -7,8 +7,15 @@
 $(document).ready(function() {
   const $form = $("#tweet-post-form");
 
+  // function to prevent cross-site scripting by escaping characters:
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const createTweetElement = function(tweet) {
-    let $tweet =
+    const $tweet =
       $(`<article class="tweet">
         <header>
           <div>
@@ -17,7 +24,7 @@ $(document).ready(function() {
           </div>
           <span class="author-handle">${tweet.user.handle}</span>
         </header>
-        <p class="tweet-text">${tweet.content.text}</p>
+        <p class="tweet-text">${escape(tweet.content.text)}</p>
         <footer>
           <h6>${timeago.format(tweet.created_at)}</h6>
           <div class="icons">
