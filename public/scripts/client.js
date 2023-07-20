@@ -66,15 +66,21 @@ $(document).ready(function() {
     const $tweet = $(this).serialize(); // form data in query string format per POST requirements
     const $tweetString = $("#tweet-text").val(); // captures text from textarea
     const $length = $tweetString.length; // length of text from textarea
+    const $output = $("output"); // character counter
 
-    // check if text area contains no characters or a string of spaces
-    // (in third condition, trim removes spaces from string, leaving an empty string
-    // if there were only spaces to begin with):
+    // check if text area contains no characters or a string of spaces:
     if ($length === 0 || $tweetString === null || $tweetString.trim() === "") {
+      // reset textarea/counter; alert user:
+      $("#tweet-text").val("");
+      $output.val(140);
       alert("Sorry! You need to add text before you can tweet. 🐦");
     } else if ($length > 140) {
+      // alert user but do not reset in case they would like to edit existing tweet:
       alert("Character count cannot exceed 140 characters. Please trim your tweet. 🐦");
     } else {
+      // reset textarea/counter; alert user:
+      $("#tweet-text").val("");
+      $output.val(140);
       $.ajax({
         method: "POST",
         url: "/tweets",
