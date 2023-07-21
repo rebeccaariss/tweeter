@@ -25,7 +25,6 @@ nav > div > p {
 }
 
 /* Mobile and tablet styles: */
-/* (Applies up to size of typical breakpoint for desktop - 1024px): */
 @media only screen and (max-width: 1024px) {
   nav {
     background-color: transparent;

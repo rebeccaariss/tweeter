@@ -27,6 +27,13 @@
   color: #FFFFFF;
 }
 
+/* Mobile and tablet styles: */
+@media only screen and (max-width: 1023px) {
+  .user-profile {
+    width: 100vw;
+  }
+}
+
 /* Desktop styles: */
 @media only screen and (min-width: 1024px) {
   body {
