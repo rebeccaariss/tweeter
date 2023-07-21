@@ -70,8 +70,6 @@ $(document).ready(function() {
     // form submission behaviour, which is to send the post request and
     // reload the page.
 
-    $("#error-messages").empty(".error"); // clear any previous error messages
-
     const $tweet = $(this).serialize(); // form data in query string format per POST requirements
     const $tweetString = $("#tweet-text").val(); // captures text from textarea
     const $length = $tweetString.length; // length of text from textarea
@@ -82,21 +80,15 @@ $(document).ready(function() {
       // reset textarea/counter; alert user:
       $("#tweet-text").val("");
       $output.val(140);
-      $("#error-messages").append(`
-        <article class="error" id="no-text">
-          <i class="fa-solid fa-triangle-exclamation"></i>
-          Sorry! You need to add text before you can post a tweet.
-          <i class="fa-solid fa-triangle-exclamation"></i>
-        </article>`);
+      // display error message:
+      $("#char-count").slideUp("slow");
+      $("#no-text").slideDown("slow");
     } else if ($length > 140) {
-      // alert user but do not reset in case they would like to edit existing tweet:
-      $("#error-messages").append(`
-      <article class="error" id="char-count">
-        <i class="fa-solid fa-triangle-exclamation"></i>
-        Character count cannot exceed 140 characters. Please trim your tweet.
-        <i class="fa-solid fa-triangle-exclamation"></i>
-      </article>`);
+      // alert user but do not reset textarea in case they would like to edit existing tweet:
+      $("#no-text").slideUp("slow");
+      $("#char-count").slideDown("slow");
     } else {
+      $(".error").slideUp("slow");
       // reset textarea/counter; alert user:
       $("#tweet-text").val("");
       $output.val(140);

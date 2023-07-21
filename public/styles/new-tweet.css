@@ -49,6 +49,16 @@ textarea {
   padding-right: 0.5rem;
 }
 
+/* Display if user submits form without text: */
+#no-text {
+  display: none;
+}
+
+/* Display if user exceeds character limit of 140: */
+#char-count {
+  display: none;
+}
+
 button {
   font-family: 'Bungee', cursive;
   background-color: #4056A1;
