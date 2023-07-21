@@ -26,3 +26,19 @@
   justify-content: center;
   color: #FFFFFF;
 }
+
+/* Desktop styles: */
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .user-profile {
+    margin: 5rem;
+    margin-top: 200px;
+    padding-top: 0px;
+    max-width: 600px;
+  }
+}
