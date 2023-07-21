@@ -43,42 +43,44 @@
         </p>
       </div>
     </nav>
-    <!-- User profile section -->
-    <header class="user-profile">
-      <img src="/images/profile-hex.png" alt="user profile picture">
-      <br>
-      <div>
-          <span><strong>Your</strong> Name</span>
-      </div>
-    </header>
-    <!-- Page-specific (main) content here -->
-    <main>
-      <!-- Tweet composition form: -->
-      <section>
-        <form id="tweet-post-form" method="POST" action="/tweets">
-          <label for="tweet-text"><strong>What are you humming about?</strong></label>
-          <textarea id="tweet-text" name="text"></textarea>
-          <!-- Error messages turn on and off dynamically in this section: -->
-          <section id="error-messages">
-            <article class="error" id="no-text">
-              <i class="fa-solid fa-triangle-exclamation"></i>
-              Sorry! You need to add text before you can post a tweet.
-              <i class="fa-solid fa-triangle-exclamation"></i>
-            </article>
-            <article class="error" id="char-count">
-              <i class="fa-solid fa-triangle-exclamation"></i>
-              Character count cannot exceed 140 characters. Please trim your tweet.
-              <i class="fa-solid fa-triangle-exclamation"></i>
-            </article>
-          </section>
-          <footer>
-            <button type="submit">Tweet</button>
-            <output name="counter" for="tweet-text">140</output>
-          </footer>
-        </form>
-      </section>
-      <!-- Tweets populate dynamically in this section: -->
-      <section id="tweet-container"></section>
-    </main>
+    <div class="main-page">
+      <!-- User profile section -->
+      <header class="user-profile">
+        <img src="/images/profile-hex.png" alt="user profile picture">
+        <br>
+        <div>
+            <span><strong>Your</strong> Name</span>
+        </div>
+      </header>
+      <!-- Page-specific (main) content here -->
+      <main>
+        <!-- Tweet composition form: -->
+        <section>
+          <form id="tweet-post-form" method="POST" action="/tweets">
+            <label for="tweet-text"><strong>What are you humming about?</strong></label>
+            <textarea id="tweet-text" name="text"></textarea>
+            <!-- Error messages turn on and off dynamically in this section: -->
+            <section id="error-messages">
+              <article class="error" id="no-text">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Sorry! You need to add text before you can post a tweet.
+                <i class="fa-solid fa-triangle-exclamation"></i>
+              </article>
+              <article class="error" id="char-count">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Character count cannot exceed 140 characters. Please trim your tweet.
+                <i class="fa-solid fa-triangle-exclamation"></i>
+              </article>
+            </section>
+            <footer>
+              <button type="submit">Tweet</button>
+              <output name="counter" for="tweet-text">140</output>
+            </footer>
+          </form>
+        </section>
+        <!-- Tweets populate dynamically in this section: -->
+        <section id="tweet-container"></section>
+      </main>
+    </div>
   </body>
 </html>
