@@ -22,7 +22,7 @@ textarea {
 }
 
 /* Container for error messages: */
-.error-messages {
+#error-messages {
   display: flex;
   justify-content: center;
 }
@@ -40,19 +40,13 @@ textarea {
   border-radius: 100px;
 }
 
+.error:hover {
+  box-shadow: none;
+}
+
 .error > i {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-
-/* Display if user submits form without text: */
-#no-text {
-  display: none;
-}
-
-/* Display if user exceeds character limit of 140: */
-#char-count {
-  display: none;
 }
 
 button {

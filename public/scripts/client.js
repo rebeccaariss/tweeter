@@ -48,7 +48,7 @@ $(document).ready(function() {
     // takes return value and prepends it to the #tweet-container
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
-      $('#tweet-container').prepend($tweet);
+      $("#tweet-container").prepend($tweet);
     }
   };
 
@@ -70,6 +70,8 @@ $(document).ready(function() {
     // form submission behaviour, which is to send the post request and
     // reload the page.
 
+    $("#error-messages").empty(".error"); // clear any previous error messages
+
     const $tweet = $(this).serialize(); // form data in query string format per POST requirements
     const $tweetString = $("#tweet-text").val(); // captures text from textarea
     const $length = $tweetString.length; // length of text from textarea
@@ -80,10 +82,20 @@ $(document).ready(function() {
       // reset textarea/counter; alert user:
       $("#tweet-text").val("");
       $output.val(140);
-      alert("Sorry! You need to add text before you can tweet. 🐦");
+      $("#error-messages").append(`
+        <article class="error" id="no-text">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          Sorry! You need to add text before you can post a tweet.
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </article>`);
     } else if ($length > 140) {
       // alert user but do not reset in case they would like to edit existing tweet:
-      alert("Character count cannot exceed 140 characters. Please trim your tweet. 🐦");
+      $("#error-messages").append(`
+      <article class="error" id="char-count">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        Character count cannot exceed 140 characters. Please trim your tweet.
+        <i class="fa-solid fa-triangle-exclamation"></i>
+      </article>`);
     } else {
       // reset textarea/counter; alert user:
       $("#tweet-text").val("");
