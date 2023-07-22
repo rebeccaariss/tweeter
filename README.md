@@ -5,16 +5,16 @@ Tweeter is a simple, single-page Twitter clone.
 Tweeter is powered by Node and Express on the back-end. On the front-end, HTML, CSS, JS, jQuery and AJAX give this page a dynamic and fluid experience without any need to refresh or load a new page, giving the application a modern and clean UI.
 
 ## Preview
-### Resizing demo:
+**Resizing demo:**
 !["Live resizing demo"](docs/demo.gif)
 
-### Ultrawide monitor view:
+**Ultrawide monitor view:**
 !["Screenshot of ultrawide monitor view"](docs/ultrawide-monitor-view.png)
 
-### Desktop view:
+**Desktop view:**
 !["Screenshot of desktop view"](docs/desktop-view.png)
 
-### Mobile view:
+**Mobile view:**
 !["Screenshot of mobile view"](docs/mobile-view.png)
 
 ## Project Takeaways
