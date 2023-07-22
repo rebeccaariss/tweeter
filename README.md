@@ -4,6 +4,12 @@ Tweeter is a simple, single-page Twitter clone.
 
 Tweeter is powered by Node and Express on the back-end. On the front-end, HTML, CSS, JS, jQuery and AJAX give this page a dynamic and fluid experience without any need to refresh or load a new page, giving the application a modern and clean UI.
 
+## Preview
+!["Live resizing demo"](docs/demo.gif)
+!["Screenshot of ultrawide monitor view"](docs/ultrawide-monitor-view.png)
+!["Screenshot of desktop view"](docs/desktop-view.png)
+!["Screenshot of mobile view"](docs/mobile-view.png)
+
 ## Project Takeaways
 
 This project focused heavily on semantic HTML, CSS, and responsive design. Given specific design specs, my goal was to execute and improve upon visual objectives by translating those visuals into code and connecting them to the back-end of the application.
