@@ -6,16 +6,21 @@ Tweeter is powered by Node and Express on the back-end. On the front-end, HTML, 
 
 ## Preview
 **Resizing demo:**
+
 !["Live resizing demo"](docs/demo.gif)
 
 **Ultrawide monitor view:**
+
 !["Screenshot of ultrawide monitor view"](docs/ultrawide-monitor-view.png)
 
 **Desktop view:**
+
 !["Screenshot of desktop view"](docs/desktop-view.png)
 
 **Mobile view:**
+
 !["Screenshot of mobile view"](docs/mobile-view.png)
+
 
 ## Project Takeaways
 
