@@ -17,11 +17,6 @@ Tweeter is powered by Node and Express on the back-end. On the front-end, HTML, 
 
 !["Screenshot of desktop view"](docs/desktop-view.png)
 
-**Mobile view:**
-
-!["Screenshot of mobile view"](docs/mobile-view.png)
-
-
 ## Project Takeaways
 
 This project focused heavily on semantic HTML, CSS, and responsive design. Given specific design specs, my goal was to execute and improve upon visual objectives by translating those visuals into code and connecting them to the back-end of the application.
