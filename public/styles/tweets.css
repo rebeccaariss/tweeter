@@ -56,6 +56,7 @@ article >header >div > img {
   border-left: none;
   padding: 1.5rem 0.5rem;
   margin-top: 0;
+  overflow-wrap: anywhere;
 }
 
 .tweet footer {
