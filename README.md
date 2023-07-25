@@ -20,7 +20,9 @@ Tweeter is powered by Node and Express on the back-end. On the front-end, HTML, 
 **Mobile view:**
 
 !["Screenshot of mobile view"](docs/mobile-view.png) 
+
 _Below 1024px, UI adjusts for tablets & mobile screens._
+
 
 ## Getting Started
 
